@@ -1,7 +1,7 @@
 from aiogram import Bot, Dispatcher, F
 from aiogram.filters import CommandStart
 from aiogram.types import (KeyboardButton, Message, ReplyKeyboardMarkup,
-                           ReplyKeyboardRemove)
+                        ReplyKeyboardRemove)
 
 # Вместо BOT TOKEN HERE нужно вставить токен вашего бота,
 # полученный у @BotFather
@@ -34,7 +34,7 @@ async def process_start_command(message: Message):
 async def process_dog_answer(message: Message):
     await message.answer(
         text='Да, несомненно, кошки боятся собак. '
-             'Но вы видели как они боятся огурцов?',
+            'Но вы видели как они боятся огурцов?',
         reply_markup=ReplyKeyboardRemove()
     )
 
@@ -44,7 +44,7 @@ async def process_dog_answer(message: Message):
 async def process_cucumber_answer(message: Message):
     await message.answer(
         text='Да, иногда кажется, что огурцов '
-             'кошки боятся больше',
+            'кошки боятся больше',
         reply_markup=ReplyKeyboardRemove()
     )
 
